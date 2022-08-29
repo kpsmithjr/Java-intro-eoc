@@ -22,14 +22,31 @@ public class test {
         Lexus RX = new Lexus("blue", 2022, 185, true);
         Lexus LS = new Lexus("gray", 2018, 190, true);
         Toyota PriusPrime = new Toyota ("blue", 2022, 180, true);
-        Toyota Camry = new Toyota ("white", 2015, 190, false);/
+        Toyota Camry = new Toyota ("white", 2015, 190, false);
     }
 
     @Test
     public void accelerateSpeedTest(){
-        assertToNull(Car.accelerateSpeed());
+        assertToNull(Car.accelerateSpeed(Accord));
     }
 
     @Test 
-    public void 
+    public void accelerateSpeedTest2(){
+        assertToNull(Car.accelerateSpeed(Odyssey));
+    }
+    
+    @Test
+    public void convertToElectricTest(){
+        assertTrue(Car.convertToElectric(PriusPrime));
+    }
+
+    @Test
+    public void convertToElectricTest2(){
+        assertTrue(Car.convertToElectric(Camry));
+    }
+
+    @Test
+    public void decelerateSpeed(){
+
+    }
 }
