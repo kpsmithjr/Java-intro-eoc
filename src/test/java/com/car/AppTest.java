@@ -24,11 +24,15 @@ public class AppTest
         // assertTrue( true );
     }
 @Test
- public void sholuldReturnSpeedPlusFive()
+ public void sholuldReturnSpeedPlusFives()
     {
-        Toyota highlander = new Toyota("blue", 2022, 400, true);
-       int expected = 5;
-        civic.acceleratedSpeed();
+        Toyota highlander = new Toyota("blue", 2022, 20, true);
+       int expected = 20;
+        highlander.acceleratedSpeed();
+        highlander.acceleratedSpeed();
+        highlander.acceleratedSpeed();
+        highlander.acceleratedSpeed();
+        highlander.acceleratedSpeed();
         int actual = highlander.getSpeed();
         assertEquals(actual, expected);
         // assertTrue( true );
@@ -47,19 +51,22 @@ public class AppTest
 
     @Test
 
-    public void shouldReturnSpeeedMinusFive(){
+    public void shouldReturnSpeeedMinusFives(){
 
-        Toyota suv = new Toyota("red", 2022, 300, false);
+        Toyota suv = new Toyota("red", 2022, 20, false);
         int expected = 0;
-        rav4.deceleratedSpeed();
-        int actual  = rav4.getSpeed();
+        suv.deceleratedSpeed();
+         suv.deceleratedSpeed();
+         suv.deceleratedSpeed();
+         suv.deceleratedSpeed();
+        int actual  = suv.getSpeed();
         assertEquals(expected,actual);
     }
 @Test
 
 public void shouldRetuenIsElectricTrue(){
 
-    Lexus suv = new Lexus("light blue", 2023, 400, true);
+    Lexus suv = new Lexus("light blue", 2023, 200, true);
     suv.converedToElectric();
     boolean expected = true;
     boolean actual =suv.getIsElectric();
@@ -67,7 +74,7 @@ public void shouldRetuenIsElectricTrue(){
 
 }
 @Test
-public void shouldRetuenIsElectricTrue(){
+public void shouldRetuenIsElectricTrues(){
 
     Lexus suv = new Lexus("light blue", 2023, 400, true);
     suv.converedToElectric();
