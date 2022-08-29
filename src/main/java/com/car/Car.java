@@ -49,3 +49,16 @@ public class Car {
         }
       }
       
+
+      public class Car{
+        static void decelerateSpeed() {
+          
+        }
+      }
+
+
+      public class Car{
+        static void convertToElectric() {
+          
+        }
+      }
