@@ -35,7 +35,7 @@ public class AppTest
         highlander.acceleratedSpeed();
         int actual = highlander.getSpeed();
         assertEquals(actual, expected);
-        // assertTrue( true );
+    
     }
 
 
