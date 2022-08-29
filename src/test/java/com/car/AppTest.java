@@ -1,5 +1,6 @@
 package com.car;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -9,12 +10,28 @@ import org.junit.Test;
  */
 public class AppTest 
 {
+
+     Car civic = new Car("Green", 1985, 105);
     /**
      * Rigorous Test :-)
      */
+
+     //part 1
+
     @Test
-    public void shouldAnswerWithTrue()
+    public void accelerateSpeedTest()
     {
-        assertTrue( true );
+        Car civic = new Car("Green", 1985, 105);
+        assertEquals(0, civic.getMaxSpeed() );
+    }
+
+    @Test
+    public void decelerateSpeedTest()
+    {
+        decelerateSpeed("Green", 1985, 105);
+        assertEquals(0, civic.getMaxSpeed() );
+    }
+
+    private void decelerateSpeed(String string, int i, int j) {
     }
 }
