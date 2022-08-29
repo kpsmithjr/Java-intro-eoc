@@ -52,7 +52,11 @@ public class Car{
     }
 
     public void setSpeed(int speed){
-        this.speed = speed;
+        if (speed <= this.maxSpeed){
+            this.speed = speed;
+        } else {
+            this.speed = this.maxSpeed;
+        }
     }
 
     public void accelerateSpeed(){

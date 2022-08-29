@@ -61,4 +61,16 @@ public class AppTest
         testCar.convertToElectric();
         assertTrue(testCar.isElectric == true);
     }
+
+    @Test
+    public void speedTest(){
+        testCar.setSpeed(50);
+        assertTrue(testCar.speed == 50);
+    }
+
+    @Test
+    public void speedTestTwo(){
+        testCar.setSpeed(500);
+        assertTrue(testCar.speed == 100);
+    }
 }

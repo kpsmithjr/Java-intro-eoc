@@ -15,6 +15,7 @@ public class Toyota extends Car{
     public void setGasMileage(boolean greatGasMileage){
         this.greatGasMileage = greatGasMileage;
     }
+
     public static void main(String[] args){
 
 
