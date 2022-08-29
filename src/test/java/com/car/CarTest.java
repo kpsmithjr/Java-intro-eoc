@@ -1,5 +1,14 @@
 package com.car;
- 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -13,12 +22,12 @@ public class CarTest {
 
     @Test
     public void testAccelerateSpeed(){
-        Assert.assertEquals(5,car.accelerateSpeed());
+        Assert.assertEquals(5,civic.accelerateSpeed());
     }
 
     @Test
     public void testDecelerateSpeed(){
-        Assert.assertEquals(0,car.decelerateSpeed());
+        Assert.assertEquals(0,civic.decelerateSpeed());
     }
 
 
@@ -55,9 +64,7 @@ public class CarTest {
     public void testIsTurbocharged(){Assert.assertFalse(civic.isTurboCharged());}
 
     
-
-    @Test
-    public void testHasLeatherSeats(){Assert.assertTrue(rx350.HasLeatherSeats());}
+   
 
   
     
