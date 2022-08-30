@@ -19,6 +19,10 @@ public class Car {
     public int getYear(){
         return year;
     }
+    public int getSpeed(){
+        return speed;
+    }
+
     public int getMaxSpeed(){
         return maxSpeed;
     }
@@ -67,7 +71,7 @@ public class Car {
             System.out.println("This car is electric");
         }
         else{
-            System.out.println("This car is not electric");
+            isElectric = true;
         }
     }
 }
