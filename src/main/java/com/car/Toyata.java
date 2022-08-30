@@ -7,11 +7,11 @@ public class Toyata extends Car {
         super(color, year, maxSpeed);
         this.greatGasMileage = greatGasMileage;
     }
-    private boolean getGreatGasMileage(){
+    public boolean getGreatMilage(){
         return greatGasMileage;
     }
 
-    public void setGreatGasMileage(boolean getGreatGasMileage){
+    public void setGreatGasMileage(boolean greatGasMileage){
         this.greatGasMileage = greatGasMileage;
     }
     
