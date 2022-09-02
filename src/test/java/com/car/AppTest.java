@@ -13,8 +13,21 @@ public class AppTest
      * Rigorous Test :-)
      */
     @Test
-    public void shouldAnswerWithTrue()
+    public void accelerateSpeed()
     {
         assertTrue( true );
     }
+    @Test
+    public void dccelerateSpeed()
+    {
+        assertTrue( true );
+    }
+    @Test
+    public void convertToElectric()
+    {
+        assertTrue( true );
+    }
+
+    
+    
 }
